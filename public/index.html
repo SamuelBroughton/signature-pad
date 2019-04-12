@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Signature Pad</title>
+
+    <link rel="stylesheet" href="signature.css">
+  </head>
+
+  <body id="signature-pad-body">
+    <div class="signature-component">
+      <div id="signature-pad-wrapper" class="signature-pad-wrapper">
+        <h1>Signature Pad Component</h1>
+        <p>This is some placeholder text this is some placeholder text.</p>
+        <p>Please sign in the box below.</p>
+        <canvas id="signature-pad" class="signature-pad"></canvas>
+        <div class="button-container">
+          <button type="button" name="clear-signature-pad" data-action="clear">Reset signature</button>
+          <button id="signature-pad-continue-button" type="button" name="save-as-jpg" data-action="save-jpg">Save as .jpg</button>
+        </div>
+      </div>
+    </div>
+    <script src="signature.js"></script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+h1, p {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  margin: 24px 0;
+}
+
+p {
+  font-size: 18px;
+  margin: 0 0 16px;
+}
+
+.signature-component {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*height: 100vh;*/
+  width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0;
+}
+
+.signature-component
+.signature-pad-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 10px;
+  background-color: #F7F7F7;
+  padding: 8px;
+}
+
+.signature-component
+.signature-pad-wrapper
+.signature-pad-body
+canvas {
+  margin: 0 auto;
+  touch-action: none;
+  height: calc(100%);
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.02) inset;
+}
+
+.signature-component
+.signature-pad-wrapper
+.button-container {
+  height: 48px;
+}
+
+#signature-pad-continue-button {
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 16px);
+}
+
+/* TODO: make max-height the bottom of the clear button + 16px */
+@media(max-height: 578px) {
+  #signature-pad-continue-button {
+    position: relative;
+    bottom: 0;
+    width: calc(100%);
+  }
+}
+
+.signature-component
+.signature-pad-wrapper
+.button-container
+button {
+  cursor: pointer;
+  width: 100%;
+  height: 48px;
+  color: rgb(248, 248, 248);
+  margin: 16px 0;
+  padding: 0;
+  border: none;
+  background-color: rgb(256, 60, 60);
+  font-size: 16px;
+}
+
+.signature-component
+.signature-pad-wrapper
+button:active {
+  background-color: rgb(211, 78, 78);
+}
+
+.signature-component
+.signature-pad-wrapper
+.button-container
+button:focus {
+  outline: none;
+}
